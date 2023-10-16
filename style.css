@@ -17,14 +17,21 @@ ul {
   display: flex;
 }
 
-.section {
+.container {
   margin: 0 auto;
   max-width: 50%;
 }
 
 .rounded {
   border-radius: 0.9375rem;
+}
+
+.button {
   padding: 0.625rem;
+}
+
+.grow {
+  flex-grow: 1;
 }
 /* /UTILITIES */
 /* Header */
@@ -54,6 +61,24 @@ nav div li:last-of-type {
   display: none;
 }
 /* /header */
+
+/* Main */
+section.container {
+  gap: 1.875rem;
+  /* width: calc((100% - 60px) / 3); */
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #b5ddff;
+  width: calc((100% - 60px) / 3);
+  flex-wrap: wrap;
+}
+
+.box:first-of-type {
+  min-width: 500px;
+}
+/* /Main */
 
 /* RESPONSIVENESS */
 
