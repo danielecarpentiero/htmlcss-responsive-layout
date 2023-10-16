@@ -49,7 +49,36 @@ nav div li:last-of-type {
   background-color: #ffffff;
   color: black;
 }
+
+.fa-solid.fa-bars {
+  display: none;
+}
 /* /header */
 
 /* RESPONSIVENESS */
+
+/* Tablet mode */
+@media screen and (max-width: 768px) {
+  nav div:last-of-type {
+    display: none;
+  }
+
+  .fa-solid.fa-bars {
+    display: inline;
+  }
+}
+/* /Tablet mode */
+
+/* Smartphone mode */
+@media screen and (max-width: 480px) {
+  nav div:last-of-type {
+    display: none;
+  }
+
+  .fa-solid.fa-bars {
+    display: inline;
+  }
+}
+/* /Smartphone mode */
+
 /* /RESPONSIVENESS */
