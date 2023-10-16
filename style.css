@@ -3,5 +3,53 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 /* /RULES */
+
+/* UTILITIES */
+.flex {
+  display: flex;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+.rounded {
+  border-radius: 0.9375rem;
+  padding: 0.625rem;
+}
+/* /UTILITIES */
+/* Header */
+
+header {
+  background-color: #0084fd;
+  color: white;
+}
+
+header nav {
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  align-items: center;
+}
+
+nav div ul {
+  gap: 1.875rem;
+  align-items: center;
+}
+
+nav div li:last-of-type {
+  background-color: #ffffff;
+  color: black;
+}
+/* /header */
+
+/* RESPONSIVENESS */
+/* /RESPONSIVENESS */
