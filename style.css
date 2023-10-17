@@ -112,7 +112,7 @@ p,
 .box {
   background-color: #b5ddff;
   width: calc((100% - 60px) / 3);
-  max-height: 21.25rem;
+  height: 21.25rem;
 }
 
 main section:first-of-type .box.flex.rounded {
@@ -199,13 +199,14 @@ main section.container:first-of-type {
 }
 /* /Second section */
 /* Third section */
-body > main > section:nth-child(3) > div > h3,
-body > main > section:nth-child(3) > div > h4,
+section:nth-child(3) > div > h3,
+section:nth-child(3) > div > h4,
 .right > h3 {
   font-weight: 400;
 }
 
-body > main > section:nth-child(3) > div > h2 {
+section:nth-child(3) > div > h2,
+section:nth-child(4) > .container h2 {
   font-size: 3rem;
   margin: 30px 0;
   color: #9792e4;
@@ -241,6 +242,61 @@ h5 {
   padding-left: 45px;
 }
 /* /third section */
+/* fourth section */
+section:nth-child(4) .container h2 {
+  color: white;
+}
+
+main section:nth-of-type(4) .box {
+  text-align: left;
+  padding: 30px;
+  background-color: white;
+}
+
+section:nth-of-type(4) .container {
+  width: calc(100 / 3);
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.box .number,
+.box h3,
+.box .button {
+  padding: 10px 0;
+}
+
+.number {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+section:nth-child(4) .box.rounded {
+  height: 450px;
+}
+
+.quality,
+.desc,
+.button {
+  padding: 15px 0;
+}
+
+.quality,
+.number {
+  color: #9792e4;
+}
+
+.desc {
+  color: #818181;
+}
+
+.button {
+  color: white;
+  background-color: #9792e4;
+  max-width: 130px;
+  font-weight: 700;
+}
+
+/* /fourth section */
 /* /Main */
 
 /* RESPONSIVENESS */
