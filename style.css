@@ -55,6 +55,12 @@ header nav {
   max-width: 1140px;
 }
 
+header .button {
+  width: 100px;
+  text-align: center;
+  font-weight: 400;
+}
+
 nav div ul {
   gap: 1.875rem;
   align-items: center;
