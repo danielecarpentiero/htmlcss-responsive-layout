@@ -26,7 +26,7 @@ section:nth-of-type(even) {
 }
 
 .rounded {
-  border-radius: 0.9375rem;
+  border-radius: 1.875rem;
 }
 
 .button {
@@ -35,6 +35,10 @@ section:nth-of-type(even) {
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.center {
+  text-align: center;
 }
 /* /UTILITIES */
 /* Header */
@@ -100,7 +104,8 @@ main section:first-of-type .box {
   color: #5a6e7f;
 }
 
-p {
+p,
+.right > h3 {
   line-height: 30px;
 }
 
@@ -193,6 +198,49 @@ main section.container:first-of-type {
   border-radius: 50px;
 }
 /* /Second section */
+/* Third section */
+body > main > section:nth-child(3) > div > h3,
+body > main > section:nth-child(3) > div > h4,
+.right > h3 {
+  font-weight: 400;
+}
+
+body > main > section:nth-child(3) > div > h2 {
+  font-size: 3rem;
+  margin: 30px 0;
+  color: #9792e4;
+}
+
+body > main > section:nth-child(3) > div > h4 {
+  font-size: 1.5rem;
+  line-height: 2.1875rem;
+}
+
+.row.flex {
+  max-height: 280px;
+  background-color: #9792e4;
+  margin: 30px 0;
+}
+
+.left img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 25px;
+}
+
+.right h3 {
+  color: white;
+  padding: 60px 50px 30px;
+}
+
+h5 {
+  font-size: 1.2rem;
+  color: white;
+  padding-left: 45px;
+}
+/* /third section */
 /* /Main */
 
 /* RESPONSIVENESS */
