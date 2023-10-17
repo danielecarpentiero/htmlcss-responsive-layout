@@ -67,6 +67,7 @@ nav div li:last-of-type {
 /* /header */
 
 /* Main */
+/* First section */
 .container {
   max-width: 71.25rem;
   gap: 30px;
@@ -140,7 +141,8 @@ main section.container:first-of-type {
   font-weight: 700;
   margin-top: 50px;
 }
-
+/* /First section */
+/* Second section */
 .col {
   margin: 100px 30px;
 }
@@ -190,16 +192,20 @@ main section.container:first-of-type {
   padding: 15px 17px;
   border-radius: 50px;
 }
+/* /Second section */
 /* /Main */
 
 /* RESPONSIVENESS */
 
 /* Tablet mode */
+/* Header */
 @media screen and (max-width: 768px) {
   nav div:last-of-type {
     display: none;
   }
-
+  /* /header */
+  /* Body */
+  /* First section */
   .container {
     justify-content: space-between;
     padding-right: 1.875rem;
@@ -225,15 +231,37 @@ main section.container:first-of-type {
     height: 50%;
     padding-top: 40px;
   }
-
+  /* /first section */
+  /* Second section */
   section:nth-of-type(2) .container {
     display: block;
   }
+
+  #planning {
+    padding: 10px 0;
+  }
+  #planning .col {
+    max-width: 100%;
+  }
+
+  .col:first-of-type h2 {
+    font-size: 3.75rem;
+  }
+
+  .col:nth-of-type(2) {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+  /* /second section */
+  /* /main */
+  /* footer */
+  /* /footer */
 }
 
 /* /Tablet mode */
 
 /* Smartphone mode */
+/* Header */
 @media screen and (max-width: 480px) {
   nav div:last-of-type {
     display: none;
@@ -243,11 +271,11 @@ main section.container:first-of-type {
   header nav {
     min-width: 330px;
   }
-
   .fa-solid.fa-bars {
     display: inline;
   }
-
+  /* /header */
+  /*  */
   .container {
     display: block;
   }
@@ -260,6 +288,10 @@ main section.container:first-of-type {
 
   .box.rounded {
     min-height: 360px;
+  }
+
+  .col:first-of-type h2 {
+    font-size: 2.75rem;
   }
 }
 /* /Smartphone mode */
