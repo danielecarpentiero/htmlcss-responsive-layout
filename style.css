@@ -10,6 +10,7 @@
 ul {
   list-style: none;
 }
+
 /* /RULES */
 
 /* UTILITIES */
@@ -19,7 +20,7 @@ ul {
 
 .container {
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 77.5rem;
 }
 
 .rounded {
@@ -30,9 +31,6 @@ ul {
   padding: 0.625rem;
 }
 
-.grow {
-  flex-grow: 1;
-}
 /* /UTILITIES */
 /* Header */
 
@@ -45,6 +43,7 @@ header nav {
   justify-content: space-between;
   padding: 1.25rem 0;
   align-items: center;
+  width: 1140px;
 }
 
 nav div ul {
@@ -63,20 +62,72 @@ nav div li:last-of-type {
 /* /header */
 
 /* Main */
-section.container {
-  gap: 1.875rem;
-  /* width: calc((100% - 60px) / 3); */
+.container {
   flex-wrap: wrap;
+  max-width: 71.25rem;
+  gap: 30px;
+}
+
+main section:first-of-type .fa-solid,
+main section:first-of-type h3 {
+  color: #0084fd;
+}
+
+main section:first-of-type h3 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.box.flex.rounded h3 {
+  text-align: left;
+}
+
+main section:first-of-type .box {
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #5a6e7f;
+}
+
+main section:first-of-type p {
+  line-height: 30px;
 }
 
 .box {
   background-color: #b5ddff;
   width: calc((100% - 60px) / 3);
-  flex-wrap: wrap;
+  max-height: 21.25rem;
 }
 
-.box:first-of-type {
-  min-width: 500px;
+main section:first-of-type .box.flex.rounded {
+  width: 750px;
+  text-align: left;
+}
+
+section:first-of-type img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0;
+}
+main section:first-of-type .fa-solid {
+  width: 100%;
+  font-size: 80px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+main section.container:first-of-type {
+  margin-top: 3.125rem;
+}
+
+.apple {
+  background-color: #0084fd;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  max-width: 12.5rem;
+  font-weight: 700;
+  margin-top: 50px;
 }
 /* /Main */
 
@@ -88,10 +139,33 @@ section.container {
     display: none;
   }
 
+  .container {
+    justify-content: space-between;
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+    max-width: 46.5625rem;
+  }
+
   .fa-solid.fa-bars {
     display: inline;
   }
+
+  .box {
+    max-width: calc((100% - 30px) / 3);
+    min-height: 560px;
+  }
+
+  main section:first-of-type .box.flex.rounded {
+    max-width: calc(66% - 10px);
+    display: block;
+  }
+  section:first-of-type img {
+    width: 50%;
+    height: 50%;
+    padding-top: 40px;
+  }
 }
+
 /* /Tablet mode */
 
 /* Smartphone mode */
